@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "StaffSession": {
+      "title": "StaffSession",
+      "description": "Authenticated clinic staff user session metadata",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 160
+        }
+      },
+      "required": ["uid", "email"]
+    }
+  },
+  "firestore": {
+    "/staff_sessions/{uid}": {
+      "schema": "StaffSession",
+      "description": "Staff user authentication session profile"
+    }
+  }
+}

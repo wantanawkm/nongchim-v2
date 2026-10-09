@@ -1,0 +1,10 @@
+{
+  "name": "ระบบคลินิกโรคเรื้อรัง DM-HT รพ.สต.หนองชิ่ม",
+  "description": "ระบบบริหารจัดการทะเบียนผู้ป่วยเบาหวานและความดันโลหิตสูง บันทึกการตรวจ สั่งจ่ายยา พิมพ์สติกเกอร์ยา A4 และติดตามเยี่ยมบ้าน อสม. รพ.สต.หนองชิ่ม",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
